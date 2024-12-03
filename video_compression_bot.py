@@ -15,35 +15,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("VideoBot")
 
 # Telegram bot configuration
-API_ID = 'YOUR_API_ID'
-API_HASH = 'YOUR_API_HASH'
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
-
-bot = TelegramClient('video_compression_bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-
-# Helper function to calculate bitrate
-def calculate_bitrate(input_path, target_size):
-    # Get the video's duration using ffprobe
-    probe = subprocess.run(
-        ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries',
-         'stream=duration', '-of', 'default=noprint_wrappers=1:nokey=1', input_path],
-import os
-import time
-import logging
-import subprocess
-from telethon import TelegramClient, events
-import math
-from pathlib import Path
-import asyncio
-import random
-import string
-from PIL import Image, ImageDraw, ImageFont
-
-# Set up logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("VideoBot")
-
-# Telegram bot configuration
 API_ID = '15787995'
 API_HASH = 'e51a3154d2e0c45e5ed70251d68382de'
 BOT_TOKEN = '7628087790:AAFADZ1UQ1II7ECu2zwnctkbCbziDKW0QsA'

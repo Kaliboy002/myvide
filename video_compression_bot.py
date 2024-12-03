@@ -10,7 +10,7 @@ import random
 import string
 from PIL import Image, ImageDraw, ImageFont
 
-# Set up logging
+# Set up loggingg
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("VideoBot")
 

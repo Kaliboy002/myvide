@@ -13,9 +13,9 @@ from PIL import Image
 import shutil
 
 # Initialize the bot
-API_ID = 'YOUR_API_ID'
-API_HASH = 'YOUR_API_HASH'
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
+API_ID = '15787995'
+API_HASH = 'e51a3154d2e0c45e5ed70251d68382de'
+BOT_TOKEN = '7628087790:AAFADZ1UQ1II7ECu2zwnctkbCbziDKW0QsA'
 
 bot = TelegramClient('video_compression_bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
